@@ -1,0 +1,34 @@
+! name: WPAI - Search - Plugin - Elementor
+! description: A Goggle focused on Elementor documentation, resources, and development
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+$discard
+! Official Elementor documentation and resources
+$boost=3,site=elementor.com
+|https://elementor.com/help^$boost=3
+|https://developers.elementor.com^$boost=3
+|https://elementor.com/blog^$boost=2
+! Elementor GitHub repositories
+|https://github.com/elementor/elementor^$boost=3
+|https://github.com/elementor/elementor-hello-theme^$boost=2
+! Elementor Academy
+|https://academy.elementor.com^$boost=2
+! Elementor Add-ons and Templates
+|https://elementor.com/widgets^$boost=2
+|https://elementor.com/templates^$boost=2
+! Elementor Developer Resources
+|https://developers.elementor.com/docs^$boost=3
+|https://developers.elementor.com/elementor-controls^$boost=2
+|https://developers.elementor.com/elementor-widgets^$boost=2
+! Elementor Pro documentation
+|https://elementor.com/help/pro^$boost=2
+! Community and support
+|https://wordpress.org/support/plugin/elementor^$boost=2
+|https://github.com/elementor/elementor/issues^$boost=2
+! Third-party resources (adjust as needed)
+|https://ultimateelementor.com^$boost=1
+|https://elementorextras.com^$boost=1
+! Remove non-Elementor-focused content
+$downrank=2,site=wpbeginner.com
+$downrank=2,site=wptavern.com
