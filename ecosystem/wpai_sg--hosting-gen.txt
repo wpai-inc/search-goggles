@@ -1,0 +1,63 @@
+! name: WPAI - Search - Hosting Companies News and Releases
+! description: A Goggle focused on news, releases, and information from major hosting companies
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+$discard
+
+! Major hosting companies
+$boost=3,site=wpengine.com
+|https://wpengine.com/blog^$boost=3
+$boost=3,site=kinsta.com
+|https://kinsta.com/blog^$boost=3
+$boost=3,site=siteground.com
+|https://www.siteground.com/blog^$boost=3
+$boost=3,site=bluehost.com
+|https://www.bluehost.com/blog^$boost=3
+$boost=3,site=hostgator.com
+|https://www.hostgator.com/blog^$boost=3
+$boost=3,site=dreamhost.com
+|https://www.dreamhost.com/blog^$boost=3
+$boost=3,site=godaddy.com
+|https://www.godaddy.com/garage^$boost=3
+$boost=3,site=liquidweb.com
+|https://www.liquidweb.com/blog^$boost=3
+$boost=3,site=pantheon.io
+|https://pantheon.io/blog^$boost=3
+$boost=3,site=flywheel.com
+|https://getflywheel.com/layout^$boost=3
+$boost=3,site=cloudways.com
+|https://www.cloudways.com/blog^$boost=3
+$boost=3,site=a2hosting.com
+|https://www.a2hosting.com/blog^$boost=3
+$boost=3,site=ionos.com
+|https://www.ionos.com/digitalguide^$boost=3
+$boost=3,site=hostinger.com
+|https://www.hostinger.com/blog^$boost=3
+$boost=3,site=inmotion.com
+|https://www.inmotionhosting.com/blog^$boost=3
+$boost=3,site=hostpapa.com
+|https://www.hostpapa.com/blog^$boost=3
+$boost=3,site=greengeeks.com
+|https://www.greengeeks.com/blog^$boost=3
+$boost=3,site=namecheap.com
+|https://www.namecheap.com/blog^$boost=3
+$boost=3,site=hostwinds.com
+|https://www.hostwinds.com/blog^$boost=3
+$boost=3,site=digitalocean.com
+|https://www.digitalocean.com/blog^$boost=3
+
+! Additional hosting-related sources
+$boost=2,site=servergrid.com
+$boost=2,site=hostadvice.com
+$boost=2,site=webhostingtalk.com
+
+! Downrank general tech news sites to focus on hosting-specific content
+$downrank=2,site=techcrunch.com
+$downrank=2,site=theverge.com
+$downrank=2,site=wired.com
+
+! Industry news and comparisons
+$boost=1,site=hostingadvice.com
+$boost=1,site=websiteplanet.com
+$boost=1,site=whoishostingthis.com

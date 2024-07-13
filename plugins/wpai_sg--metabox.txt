@@ -1,0 +1,34 @@
+! name: WPAI - Search - Plugin - Meta Box
+! description: A Goggle focused on Meta Box documentation, resources, and development
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+$discard
+! Official Meta Box documentation and resources
+$boost=3,site=metabox.io
+|https://docs.metabox.io^$boost=3
+|https://metabox.io/docs^$boost=3
+|https://metabox.io/blog^$boost=2
+! Meta Box support site
+$boost=3,site=support.metabox.io
+! Meta Box GitHub repositories
+|https://github.com/wpmetabox/meta-box^$boost=3
+|https://github.com/wpmetabox/meta-box-builder^$boost=2
+|https://github.com/wpmetabox/mb-custom-post-type^$boost=2
+! Meta Box Developer Resources
+|https://docs.metabox.io/extensions^$boost=3
+|https://docs.metabox.io/fields^$boost=3
+|https://docs.metabox.io/actions^$boost=2
+|https://docs.metabox.io/filters^$boost=2
+! Community and support
+|https://wordpress.org/support/plugin/meta-box^$boost=2
+|https://github.com/wpmetabox/meta-box/issues^$boost=2
+|https://metabox.io/support^$boost=2
+! Meta Box extensions
+|https://metabox.io/plugins^$boost=2
+! Third-party resources (adjust as needed)
+|https://wpshout.com/tag/meta-box^$boost=1
+|https://wptips.dev/tag/meta-box^$boost=1
+! Remove non-Meta Box-focused content
+$downrank=2,site=wpbeginner.com
+$downrank=2,site=wptavern.com
