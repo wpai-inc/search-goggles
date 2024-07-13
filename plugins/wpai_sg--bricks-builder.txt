@@ -1,0 +1,13 @@
+! name: WPAI - Search - Plugin - Bricks Builder
+! description: Bricks Builder Search Goggle
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+
+$discard
+$boost=4,site=bricksbuilder.io
+$boost=4,site=academy.bricksbuilder.io
+$boost=3,site=forum.bricksbuilder.io
+$boost=2,site=bricksultimate.com
+$boost=2,site=learnbricksbuilder.com
+$boost=1,site=brickslabs.com

@@ -1,0 +1,60 @@
+! name: WPAI - Search - Core (General) - WordPress
+! description: WordPress.org Core Project Search Goggle with specific GitHub repos and their subpages
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+
+$discard
+
+$boost=4,site=wordpress.org
+$boost=4,site=developer.wordpress.org
+$boost=4,site=make.wordpress.org
+$boost=2,site=core.trac.wordpress.org
+
+! GitHub repositories (these specific repos and all their subpages)
+|https://github.com/WordPress/wordpress-develop^$boost=3
+|https://github.com/WordPress/gutenberg^$boost=3
+|https://github.com/woocommerce/woocommerce^$boost=2
+
+
+! Additional WordPress-related sites
+$boost=2,site=wp-cli.org
+$boost=3,site=wordpress.stackexchange.com
+$boost=2,site=wpengine.com
+$boost=1,site=wptavern.com
+
+! WooCommerce-related sites
+$boost=2,site=developer.woocommerce.com
+$boost=1,site=woocommerce.com
+$boost=1,site=businessbloomer.com
+
+! WordPress Core team blogs and resources
+/core/$site=make.wordpress.org
+/docs/$site=make.wordpress.org
+/plugins/$site=make.wordpress.org
+/themes/$site=make.wordpress.org
+
+! Additional developer resources and community sites
+$boost=1,site=wordpress.tv
+$boost=1,site=roots.io
+$boost=2,site=deliciousbrains.com
+$boost=2,site=torquemag.io
+$boost=2,site=wpbeginner.com
+$boost=1,site=css-tricks.com
+/tag/wordpress/$site=css-tricks.com
+$boost=2,site=kinsta.com
+/blog/$site=kinsta.com
+$boost=2,site=pantheon.io
+/blog/$site=pantheon.io
+
+! WordPress performance and security
+/tags/wordpress/$site=web.dev
+$boost=2,site=wordpress.org
+/support/$site=wordpress.org
+
+! WordPress coding standards and best practices
+/coding-standards/$site=developer.wordpress.org
+/core/handbook/$site=make.wordpress.org
+
+! WordPress REST API
+/rest-api/$site=developer.wordpress.org

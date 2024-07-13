@@ -1,0 +1,54 @@
+! name: WPAI - Search - Core (Code) - WordPress
+! description: A Goggle focused on WordPress code references, API documentation, and core development resources
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+
+$discard
+
+! Official WordPress documentation and code references
+$boost=3,site=developer.wordpress.org
+|https://developer.wordpress.org/reference^$boost=3
+|https://developer.wordpress.org/apis^$boost=3
+|https://developer.wordpress.org/plugins^$boost=3
+|https://developer.wordpress.org/themes^$boost=3
+$boost=3,site=codex.wordpress.org
+
+! WordPress core repositories
+|https://github.com/WordPress/wordpress-develop^$boost=3
+|https://github.com/WordPress/gutenberg^$boost=3
+
+! WordPress Coding Standards
+|https://github.com/WordPress/WordPress-Coding-Standards^$boost=2
+
+! Core development resources
+$boost=2,site=core.trac.wordpress.org
+|https://make.wordpress.org/core^$boost=2
+
+! Developer-focused subdomains
+|https://wp-cli.org^$boost=2
+|https://roots.io^$boost=2
+
+! Stack Exchange for code-specific questions
+|https://wordpress.stackexchange.com^$boost=2
+
+! Additional code reference and API documentation
+|https://developer.wordpress.org/rest-api^$boost=2
+|https://developer.wordpress.org/cli/commands^$boost=2
+
+! Hook reference
+|https://hookr.io^$boost=2
+|https://adambrown.info/p/wp_hooks^$boost=2
+
+! Package management
+|https://wpackagist.org^$boost=2
+
+! Other
+|https://www.billerickson.net^$boost=2
+
+! Performance and security (code-focused aspects)
+|https://wordpress.org/performance^$boost=2
+
+! Remove non-code-focused content
+$downrank=2,site=wpbeginner.com
+$downrank=2,site=wptavern.com
