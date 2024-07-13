@@ -1,0 +1,27 @@
+! name: WPAI - Search - Plugin - Yoast SEO
+! description: A Goggle focused on Yoast SEO documentation, resources, and development
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+$discard
+! Official Yoast SEO documentation and resources
+$boost=3,site=yoast.com
+|https://developer.yoast.com^$boost=3
+|https://yoast.com/help^$boost=3
+|https://yoast.com/academy^$boost=2
+|https://yoast.com/blog^$boost=2
+! Yoast SEO GitHub repositories
+|https://github.com/Yoast/wordpress-seo^$boost=3
+|https://github.com/Yoast/javascript^$boost=2
+! Yoast SEO Developer Resources
+|https://developer.yoast.com/customization^$boost=3
+|https://developer.yoast.com/features^$boost=2
+! Community and support
+|https://wordpress.org/support/plugin/wordpress-seo^$boost=2
+|https://github.com/Yoast/wordpress-seo/issues^$boost=2
+! Third-party resources (adjust as needed)
+|https://kb.yoast.com^$boost=2
+|https://yoastacademy.com^$boost=1
+! Remove non-Yoast-focused content
+$downrank=2,site=wpbeginner.com
+$downrank=2,site=wptavern.com

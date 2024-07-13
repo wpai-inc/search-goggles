@@ -1,0 +1,25 @@
+! name: WPAI - Search - Plugin - Advanced Custom Fields
+! description: A Goggle focused on Advanced Custom Fields documentation, resources, and development
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+$discard
+! Official ACF documentation and resources
+$boost=3,site=advancedcustomfields.com
+|https://www.advancedcustomfields.com/resources^$boost=3
+|https://www.advancedcustomfields.com/blog^$boost=2
+! ACF GitHub repository
+|https://github.com/AdvancedCustomFields/acf^$boost=3
+! ACF Developer Resources
+|https://www.advancedcustomfields.com/resources/functions^$boost=3
+|https://www.advancedcustomfields.com/resources/actions^$boost=3
+|https://www.advancedcustomfields.com/resources/filters^$boost=3
+! Community and support
+|https://wordpress.org/support/plugin/advanced-custom-fields^$boost=2
+|https://github.com/AdvancedCustomFields/acf/issues^$boost=2
+! Third-party resources (adjust as needed)
+|https://acfextras.com^$boost=1
+|https://acf.com^$boost=1
+! Remove non-ACF-focused content
+$downrank=2,site=wpbeginner.com
+$downrank=2,site=wptavern.com

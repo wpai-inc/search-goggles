@@ -1,0 +1,29 @@
+! name: WPAI - Search - Plugin - WooCommerce
+! description: A Goggle focused on WooCommerce documentation, resources, and development
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+$discard
+! Official WooCommerce documentation and resources
+$boost=3,site=woocommerce.com
+|https://docs.woocommerce.com^$boost=3
+|https://woocommerce.com/documentation^$boost=3
+|https://developer.woocommerce.com^$boost=3
+|https://woocommerce.com/blog^$boost=2
+! WooCommerce GitHub repositories
+|https://github.com/woocommerce/woocommerce^$boost=3
+|https://github.com/woocommerce/woocommerce-gutenberg-products-block^$boost=2
+! WooCommerce REST API
+|https://woocommerce.github.io/woocommerce-rest-api-docs^$boost=3
+! WooCommerce Developer Resources
+|https://developer.woocommerce.com/extension-developer-guide^$boost=3
+|https://developer.woocommerce.com/api^$boost=2
+! Community and support
+|https://wordpress.org/support/plugin/woocommerce^$boost=2
+|https://github.com/woocommerce/woocommerce/issues^$boost=2
+! Third-party resources (adjust as needed)
+|https://businessbloomer.com/category/woocommerce-tips-tricks^$boost=1
+|https://www.skyverge.com/blog/category/woocommerce^$boost=1
+! Remove non-WooCommerce-focused content
+$downrank=2,site=wpbeginner.com
+$downrank=2,site=wptavern.com
