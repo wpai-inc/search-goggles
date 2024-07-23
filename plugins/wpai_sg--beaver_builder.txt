@@ -1,0 +1,29 @@
+! name: WPAI - Search - Plugin - Beaver Builder
+! description: A Goggle focused on Beaver Builder documentation, resources, and development
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+$discard
+! Official Beaver Builder documentation and resources
+$boost=3,site=wpbeaverbuilder.com
+|https://docs.wpbeaverbuilder.com^$boost=3
+|https://www.wpbeaverbuilder.com/knowledge-base^$boost=3
+|https://www.wpbeaverbuilder.com/blog^$boost=2
+! Beaver Builder GitHub repositories
+|https://github.com/beaverbuilder/bb-plugin^$boost=3
+|https://github.com/beaverbuilder/assistant^$boost=2
+! Beaver Builder Developer Resources
+|https://docs.wpbeaverbuilder.com/beaver-builder/developer^$boost=3
+|https://docs.wpbeaverbuilder.com/beaver-themer/developer^$boost=3
+! Beaver Builder Add-ons and Templates
+|https://www.wpbeaverbuilder.com/beaver-builder-add-ons^$boost=2
+|https://www.wpbeaverbuilder.com/templates^$boost=2
+! Community and support
+|https://www.wpbeaverbuilder.com/support^$boost=2
+|https://www.wpbeaverbuilder.com/forum^$boost=2
+! Third-party resources (adjust as needed)
+|https://beaverlodge.com^$boost=1
+|https://powerpackelements.com/beaver-builder-widgets^$boost=1
+! Remove non-Beaver Builder-focused content
+$downrank=2,site=wpbeginner.com
+$downrank=2,site=wptavern.com
