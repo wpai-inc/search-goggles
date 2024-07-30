@@ -23,6 +23,7 @@ $boost=3,site=wordpress.stackexchange.com
 $boost=2,site=wpengine.com
 $boost=2,site=thewp.world
 $boost=1,site=wptavern.com
+$boost=1,site=wordpressfoundation.org
 
 ! WooCommerce-related sites
 $boost=2,site=developer.woocommerce.com
