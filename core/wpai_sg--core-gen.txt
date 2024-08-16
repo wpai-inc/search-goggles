@@ -22,6 +22,8 @@ $boost=2,site=wp-cli.org
 $boost=3,site=wordpress.stackexchange.com
 $boost=2,site=wpengine.com
 $boost=2,site=thewp.world
+$boost=2,site=thewpweekly.com
+$boost=2,site=therepository.email
 $boost=1,site=wptavern.com
 $boost=1,site=wordpressfoundation.org
 
