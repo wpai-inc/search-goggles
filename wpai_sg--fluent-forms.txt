@@ -1,0 +1,21 @@
+! name: WPAI - Search - Plugin - FluentForms
+! description: A Goggle focused on FluentForms documentation, resources, and development
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+$discard
+
+! name: FluentForms Search Goggle
+! description: A focused Goggle for FluentForms documentation and developer resources
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+
+! Boost FluentForms documentation and resources
+$boost=3,site=wpmanageninja.com/docs/fluent-form
+$boost=3,site=developers.fluentforms.com
+$boost=3,site=fluentforms.com/docs
+
+! Remove non-FluentForms-focused content
+$downrank=2,site=wpbeginner.com
+$downrank=2,site=wptavern.com
