@@ -4,11 +4,23 @@
 ! author: WPAI Inc
 ! homepage: https://wpai.co
 $discard
-! Boost FluentForms documentation and resources
-$boost=3,site=wpmanageninja.com/docs/fluent-form
-$boost=3,site=developers.fluentforms.com
-$boost=3,site=fluentforms.com/docs
-
+! Official FluentForms documentation and resources
+$boost=3,site=fluentforms.com
+|https://fluentforms.com/docs^$boost=3
+|https://developers.fluentforms.com^$boost=3
+|https://fluentforms.com/blog^$boost=2
+! FluentForms GitHub repository
+|https://github.com/fluentform/fluentform^$boost=3
+! FluentForms Developer Resources
+|https://developers.fluentforms.com/docs^$boost=3
+|https://developers.fluentforms.com/hooks-filters^$boost=2
+! Community and support
+|https://wordpress.org/support/plugin/fluentform^$boost=2
+|https://github.com/fluentform/fluentform/issues^$boost=2
+! WPManageNinja resources (parent company)
+|https://wpmanageninja.com/docs/fluent-form^$boost=2
+! Related product: FluentCRM
+|https://fluentcrm.com/docs^$boost=1
 ! Remove non-FluentForms-focused content
 $downrank=2,site=wpbeginner.com
 $downrank=2,site=wptavern.com
