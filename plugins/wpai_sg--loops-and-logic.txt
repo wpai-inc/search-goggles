@@ -1,0 +1,13 @@
+! name: WPAI - Search - Plugin - Loops And Logic
+! description: A Goggle focused on Loops And Logic documentation, resources, and development
+! public: false
+! author: WPAI Inc
+! homepage: https://wpai.co
+$discard
+! Official LL documentation and resources
+$boost=3,site=loopsandlogic.com
+|https://docs.loopsandlogic.com^$boost=3
+! LL GitHub repositories
+|https://github.com/TangibleInc^$boost=3
+! Community and support
+|https://wordpress.org/support/plugin/tangible-loops-and-logic^$boost=2
